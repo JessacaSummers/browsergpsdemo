@@ -1,0 +1,40 @@
+[
+	{
+		"id": 1,
+		"name": "Jessica's Family Restaurant",
+		"location": {
+			"lat":42.834084314735804, "lng":-88.73057194833946
+		} 
+	},
+	{
+		"id": 2,
+		"name": "Tokyo Japanese Cuisine",
+		"location": {
+			"lat": 42.83392528125506, "lng":-88.73139807983249
+		}
+	},
+	{
+		"id": 3,
+		"name": "Taco Fresco",
+		"location": {
+			"lat":42.83400789257456, "lng":-88.73188355964261
+		}
+	},
+	{
+		"id": 4,
+		"name": "Reflections of the Past",
+		"location": {
+			"lat":42.834322601339274, "lng":-88.7320579032448
+		}
+	},
+	{
+		"id": 5,
+		"name": "Quiet Hut Sports",
+		"location": {
+			"lat":42.83432801038445, "lng":-88.73215714501882
+		}
+
+	}
+
+
+]
