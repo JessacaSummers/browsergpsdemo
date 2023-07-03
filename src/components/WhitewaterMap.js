@@ -36,7 +36,7 @@ export default function WhitewaterMap ({coords}){
 
   return (
       isLoaded ? <GoogleMap
-      	mapContainerStyle={{ height: '35vh', width: '100%' }}
+      	mapContainerStyle={{ height: '50vh', width: '100%' }}
         center={coords}
         zoom={20}
         center={coords}

@@ -30,8 +30,9 @@ function App() {
         })
       },
       //Error
-      () => {
-        alert("Geolocation error :(")
+      (e) => {
+        console.log("Geolocation error: ", e);
+        alert("Geolocation error: " + e.message)
       },
       //Options
       {
@@ -85,13 +86,15 @@ function App() {
 
   return <>
     <WhitewaterMap coords={coords}/>
-    <div className="d-flex justify-content-between m-2">
-      <button className="btn btn-small btn-primary" onClick={() => setKeyboardMode(!keyboardMode)}>
-        {keyboardMode ? "Switch to GPS Mode" : "Switch to Keyboard Mode"}
-      </button>
-      <p>Current coords: {coords.lat + "," + coords.lng}</p>
+    <div  style={{height: "50vh", overflow: "scroll"}}>
+      <div className="d-flex justify-content-between m-4">
+        <button className="btn btn-small btn-primary" onClick={() => setKeyboardMode(!keyboardMode)}>
+          {keyboardMode ? "Switch to GPS Mode" : "Switch to Keyboard Mode"}
+        </button>
+        <p>Current coords: {coords.lat + "," + coords.lng}</p>
+      </div>
+      <Geofences coords={coords} />
     </div>
-    <Geofences coords={coords} />
   </>
 
   /*return <>
