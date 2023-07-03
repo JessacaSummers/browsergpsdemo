@@ -91,7 +91,7 @@ function App() {
         <button className="btn btn-small btn-primary" onClick={() => setKeyboardMode(!keyboardMode)}>
           {keyboardMode ? "Switch to GPS Mode" : "Switch to Keyboard Mode"}
         </button>
-        <p>Current coords: {coords.lat + "," + coords.lng}</p>
+        <p>Current coords:<br />lat: {coords.lat},<br />lng: {coords.lng}</p>
       </div>
       <Geofences coords={coords} />
     </div>
