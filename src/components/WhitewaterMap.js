@@ -1,8 +1,6 @@
 import React, {useState, useEffect, useCallback, useRef, Fragment} from 'react';
 import { GoogleMap, useJsApiLoader, useLoadScript, MarkerF } from '@react-google-maps/api';
 
-console.log("Api key:", process.env.REACT_APP_GOOGLE_API)
-
 export default function WhitewaterMap ({coords}){
 
 	//const [map, setMap] = React.useState(null);
@@ -16,6 +14,10 @@ export default function WhitewaterMap ({coords}){
   	const onMapLoad = useCallback((map) => {
     	mapRef.current = map;
   	}, []);
+
+  useEffect(() => {
+  	console.log("WhitewaterMap coords update:", coords);
+  }, [coords])
 
 	/*useEffect(() => {
 
@@ -34,7 +36,7 @@ export default function WhitewaterMap ({coords}){
 
   return (
       isLoaded ? <GoogleMap
-      	mapContainerStyle={{ height: '50vh', width: '100%' }}
+      	mapContainerStyle={{ height: '35vh', width: '100%' }}
         center={coords}
         zoom={20}
         center={coords}
