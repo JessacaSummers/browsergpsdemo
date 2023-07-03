@@ -1,7 +1,7 @@
 {
   "name": "browsergpsdemo",
   "version": "0.1.0",
-  "homepage": "https://jessacasummers.github.io/browsergpsdemo",
+  "homepage": "https://jessacasummers.github.io/browsergpsdemo/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
