@@ -13,7 +13,7 @@ const defaultCoords =
 
 function App() {
 
-  const [keyboardMode, setKeyboardMode] = useState(true)
+  const [keyboardMode, setKeyboardMode] = useState(false)
 
   const [coords, setCoords] = useState(defaultCoords)
 
